@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/lib/api.ts"],"version":"5.9.3"}
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/magic/spotlight-card.tsx","./src/components/movies/MovieCard.tsx","./src/components/ui/button.tsx","./src/components/ui/card.tsx","./src/components/ui/skeleton.tsx","./src/lib/api.ts","./src/lib/utils.ts","./src/pages/Home.tsx"],"version":"5.9.3"}
