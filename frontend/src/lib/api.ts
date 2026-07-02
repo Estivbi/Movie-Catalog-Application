@@ -22,7 +22,7 @@ export async function fetchPopularMovies(page: number) {
   const response = await fetch(`${apiBaseUrl}/movies?page=${page}`);
 
   if (!response.ok) {
-    throw new Error('No se pudieron cargar las películas');
+    throw new Error('No se pudieron cargar las películas. Revisa que el backend esté levantado en la URL configurada.');
   }
 
   return response.json() as Promise<PopularMoviesResponse>;
