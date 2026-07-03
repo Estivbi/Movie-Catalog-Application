@@ -6,7 +6,7 @@ interface SpotlightCardProps {
   className?: string;
 }
 
-// Efecto visual ligero tipo Magic UI: brillo sutil, borde vivo y profundidad al pasar el cursor.
+// Efecto visual ligero tipo Magic UI: brillo sutil, borde y profundidad al pasar el cursor.
 export function SpotlightCard({ children, className }: SpotlightCardProps) {
   return (
     <div

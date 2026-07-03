@@ -11,7 +11,7 @@ function getAdminEmail() {
   return adminEmail;
 }
 
-// La autorización de admin es deliberadamente simple: solo el email configurado en entorno puede entrar.
+// Solo el email configurado en entorno puede entrar.
 export function adminMiddleware(request: AuthenticatedRequest, response: Response, next: NextFunction) {
   if (!request.user?.email) {
     return response.status(401).json({ message: 'No autenticado' });

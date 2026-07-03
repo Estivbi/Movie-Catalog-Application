@@ -1,4 +1,13 @@
 import { createClient } from '@supabase/supabase-js';
+import { WebSocket as NodeWebSocket } from 'ws';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+if (!globalThis.WebSocket) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (globalThis as any).WebSocket = NodeWebSocket;
+}
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;

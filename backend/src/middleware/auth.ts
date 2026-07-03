@@ -8,7 +8,7 @@ export interface AuthenticatedRequest extends Request {
   };
 }
 
-// El backend no confía en el frontend: extrae el JWT, lo valida contra Supabase y deja el usuario resuelto en req.user.
+// Extrae el JWT, lo valida contra Supabase y deja el usuario resuelto en req.user.
 export async function authMiddleware(request: AuthenticatedRequest, response: Response, next: NextFunction) {
   const authHeader = request.headers.authorization;
 
