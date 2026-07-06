@@ -9,13 +9,19 @@ backend/dist/
 frontend/dist/
 coverage/
 
-# Environment files
+# Environment files (never ignore .env.example — it's a template for contributors)
 .env
-.env.*
+.env.local
+.env.production
+.env.development.local
+.env.test.local
+.env.production.local
 backend/.env
-backend/.env.*
+backend/.env.local
+backend/.env.production
 frontend/.env
-frontend/.env.*
+frontend/.env.local
+frontend/.env.production
 
 # Logs
 npm-debug.log*
